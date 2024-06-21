@@ -1,0 +1,59 @@
+\documentclass[a0,portrait]{tikzposter}
+
+% Importar el logo
+\usepackage{graphicx}
+\usepackage{lipsum} % Para el texto de ejemplo, puedes eliminarlo si no lo necesitas
+
+% Configuración de colores
+\definecolor{PosterColorOne}{RGB}{108, 92, 231}  % Morado
+\definecolor{PosterColorTwo}{RGB}{56, 149, 211}  % Azul
+\definecolor{PosterColorThree}{RGB}{255, 255, 255}  % Blanco
+\definecolor{PosterColorFour}{RGB}{254, 209, 0}  % Amarillo
+\definecolor{LightYellow}{RGB}{255, 255, 204}  % Amarillo claro
+
+% Configuración de estilos de fondo y bloque
+\usetheme{Default}
+\usecolorstyle[colorOne=PosterColorOne, colorTwo=PosterColorTwo, colorThree=LightYellow]{Default}
+
+% Configuración del título y el logo
+\titlegraphic{\includegraphics[height=10cm]{Logo.jpeg}}
+
+\title{Mi primer póster}
+\author{Dagoberto Bermúdez R}
+\institute{Universidad Santo Tomás, Facultad de Estadística}
+
+\begin{document}
+	
+	\maketitle
+	
+	% Bloque de Resumen
+	\block{Resumen}{
+		En esta sección, deberías proporcionar un breve resumen del póster. Esto incluye los objetivos principales del estudio, la metodología empleada, los resultados más importantes y las conclusiones clave. El resumen debe ser conciso y atractivo para captar el interés de los asistentes.
+	}
+	
+	% Bloque de Introducción
+	\block{Introducción}{
+		En la introducción, deberías presentar el contexto del estudio. Explica por qué el tema es importante y proporciona una revisión breve de la literatura existente. También es útil plantear las preguntas de investigación o las hipótesis que tu estudio pretende abordar. Esta sección establece el escenario para el resto del póster.
+	}
+	
+	% Bloque de Metodología
+	\block{Metodología}{
+		La sección de metodología debe detallar cómo llevaste a cabo tu estudio. Describe el diseño del estudio, las técnicas de muestreo, los métodos de recolección de datos y las herramientas analíticas utilizadas. Es esencial que esta sección sea clara y detallada para que otros investigadores puedan replicar tu trabajo si lo desean.
+	}
+	
+	% Bloque de Resultados
+	\block{Resultados}{
+		Aquí, debes presentar los resultados principales de tu estudio. Utiliza gráficos, tablas y otros elementos visuales para hacer los resultados más comprensibles. Asegúrate de destacar los hallazgos más relevantes y cómo responden a las preguntas de investigación planteadas en la introducción.
+	}
+	
+	% Bloque de Conclusiones
+	\block{Conclusiones}{
+		En las conclusiones, resume los principales hallazgos de tu estudio y discute sus implicaciones. Comenta sobre las posibles limitaciones de tu investigación y sugiere direcciones futuras para estudios adicionales. Esta sección debe proporcionar una síntesis clara de lo que se aprendió y por qué es importante.
+	}
+	
+	% Bloque de Referencias
+	\block{Referencias}{
+		Lista todas las fuentes citadas en tu póster en un formato de referencia adecuado. Asegúrate de incluir todos los artículos, libros y otros recursos que mencionaste en las secciones anteriores. Usa un estilo de citación consistente, como APA o IEEE, dependiendo de la norma de tu disciplina.
+	}
+	
+\end{document}
